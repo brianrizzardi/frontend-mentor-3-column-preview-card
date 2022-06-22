@@ -1,0 +1,163 @@
+  * *:before, *:after {
+    border: 0;
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  body {
+    background-color: hsl(0, 0%, 95%);
+    font-size: 15px;
+    overflow: hidden;
+  }
+
+  button {
+    background-color: hsl(0, 0%, 95%);
+    border: none;
+    border-radius: 20px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 700;
+    margin-top: 65px;
+    padding: 12px 24px;
+  }
+
+  button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+  }
+
+  .car-card {
+    height: 460px;
+    padding: 5% 5% 0 5%;
+    width: 300px;
+  }
+
+  .container {
+    display: flex;
+  }
+
+  h1 {
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 40px;
+  }
+
+  .luxury {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 10px 10px 0;
+  }
+
+  .luxury-button {
+    color: hsl(179, 100%, 13%);
+  }
+
+  .luxury-button:hover {
+    color:hsl(0, 0%, 95%);
+  }
+
+  main {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 2;
+  }
+
+  .sedan {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 10px 0 0 10px;
+  }
+
+  .sedan-button {
+    color: hsl(31, 77%, 52%);
+  }
+
+  .sedan-button:hover {
+    color:hsl(0, 0%, 95%);
+  }
+
+  .suv {
+    background-color: hsl(184, 100%, 22%);
+  }
+
+  .suv-button {
+    color: hsl(184, 100%, 22%);
+  }
+
+  .suv-button:hover {
+    color:hsl(0, 0%, 95%);
+  }
+
+
+  @media (max-width: 925px) {
+    button {
+        padding: 9.6px 19.2px;
+    }
+
+    .car-card {
+        height: 368px;
+        padding: 5% 5% 0 5%;
+        width: 240px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    img {
+        width: 51.2px;
+    }
+
+    p {
+        font-size: 12px;;
+        line-height: 1.6;
+    }
+  }
+
+
+  @media (max-width: 745px) {
+    .car-card {
+        padding: 40px 40px 0 40px;
+      }
+
+    body {
+        font-size: 15px;
+        overflow: scroll;
+    }
+
+    button {
+        bottom: -20px;
+        margin-top: 20px;
+        padding: 12px 24px;
+        position: relative;
+    }
+    
+    .container {
+        flex-direction: column;
+    }
+
+    .luxury {
+        border-radius: 0 0 10px 10px;
+    }
+
+    main {
+        flex-direction: column;
+        height: auto;
+        margin: 10% 0;
+        width: auto;
+    }
+
+    p {
+        line-height: 2;
+        margin-right: 20px;
+    }
+
+    .sedan {
+        border-radius: 10px 10px 0 0;
+    }
+  }
